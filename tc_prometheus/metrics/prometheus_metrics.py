@@ -91,5 +91,5 @@ class Metrics(BaseMetrics):
     def __basename(self, metricname):
         for mapped in self.mapping.keys():
             if metricname.startswith(mapped + "."):
-                metricname = mapped
+                metricname = mapped + "XXX"
         return metricname
